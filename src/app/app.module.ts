@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -9,6 +10,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 @NgModule({
   imports: [
+    CommonModule,
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
@@ -27,6 +29,7 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
 })
 
 export class AppModule { }
+export class MeuModulo { }
 
 
 /*
