@@ -1,22 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Product, products } from '../products';
-import { NgIf } from '@angular/common';
-import { CommonModule } from '@angular/common';
+// import { NgIf } from '@angular/common';
+// import { CommonModule } from '@angular/common';
 import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-product-details',
-  standalone: true,
-  imports: [
-    NgIf,
-    CommonModule
-  ],
+  // standalone: true,
+  // imports: [
+  //   NgIf,
+  //   CommonModule
+  // ],
   templateUrl: './product-details.component.html',
   styleUrl: './product-details.component.css'
 })
 
 export class ProductDetailsComponent implements OnInit {
+goBack() {
+  window.history.back();
+}
 
   product: Product | undefined;
 

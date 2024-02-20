@@ -25,7 +25,6 @@ import { ShippingComponent } from './shipping/shipping.component';
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
-      { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
     ])
   ],
@@ -34,8 +33,9 @@ import { ShippingComponent } from './shipping/shipping.component';
     TopBarComponent,
     ProductListComponent,
     ProductAlertsComponent,
-    // ProductDetailsComponent,
-    // ShippingComponent,
+    CartComponent,
+    ProductDetailsComponent,
+    ShippingComponent,
   ],
   bootstrap: [
     AppComponent
@@ -43,8 +43,6 @@ import { ShippingComponent } from './shipping/shipping.component';
 })
 
 export class AppModule { }
-export class MeuModulo { }
-
 
 /*
 Copyright Google LLC. All Rights Reserved.
